@@ -4,9 +4,9 @@ import Movie from '../Movie/Movie'
 
 const Movies = () => {
   return (
-    <section>
+    <section className={styles.moviesSection}>
       <h1>Movie Database</h1>
-      <div className={styles.movies}>
+      <div className={styles.moviesSection__movies}>
         {movies.map((movie, index) => {
           return (
             <Movie

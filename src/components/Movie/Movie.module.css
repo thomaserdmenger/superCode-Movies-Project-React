@@ -1,0 +1,16 @@
+.movie {
+  /* border: 1px solid black; */
+  padding: 0.5rem;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  background-color: rgb(243, 243, 243);
+  box-shadow: 0 0 5px rgb(158, 157, 157);
+}
+
+.movie__genre {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}

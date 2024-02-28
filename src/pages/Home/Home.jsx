@@ -1,7 +1,13 @@
 import Movies from '../../components/Movies/Movies'
 
 const Home = () => {
-  return <Movies />
+  return (
+    <main>
+      <div className='wrapper'>
+        <Movies />
+      </div>
+    </main>
+  )
 }
 
 export default Home
