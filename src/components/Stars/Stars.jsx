@@ -2,13 +2,13 @@ import styles from './Stars.module.css'
 
 const Stars = ({ rate }) => {
   const rateRound = Math.round(rate)
-  console.log(rateRound)
-
   const starsArr = []
+
   for (let i = 0; i < 10; i++) {
     if (i < rateRound) {
       starsArr.push(
         <svg
+          key={i}
           className={styles.star}
           xmlns='http://www.w3.org/2000/svg'
           viewBox='0 0 576 512'>
@@ -18,6 +18,7 @@ const Stars = ({ rate }) => {
     } else {
       starsArr.push(
         <svg
+          key={i}
           className={styles.star}
           xmlns='http://www.w3.org/2000/svg'
           viewBox='0 0 576 512'>
@@ -27,7 +28,6 @@ const Stars = ({ rate }) => {
     }
   }
 
-  //   console.dir(starsArr)
   return <div>{starsArr}</div>
 }
 
