@@ -1,4 +1,5 @@
 import styles from './Movie.module.css'
+import Stars from '../Stars/Stars'
 
 const Movie = ({ movie: { title, year, director, duration, genre, rate } }) => {
   return (
@@ -14,6 +15,7 @@ const Movie = ({ movie: { title, year, director, duration, genre, rate } }) => {
           </div>
         )
       })}
+      <Stars rate={rate} />
       <p>{rate}</p>
     </article>
   )

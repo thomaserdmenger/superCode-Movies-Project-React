@@ -4,15 +4,18 @@ import Movie from '../Movie/Movie'
 
 const Movies = () => {
   return (
-    <section className={styles.movies}>
-      {movies.map((movie, index) => {
-        return (
-          <Movie
-            movie={movie}
-            key={index}
-          />
-        )
-      })}
+    <section>
+      <h1>Movie Database</h1>
+      <div className={styles.movies}>
+        {movies.map((movie, index) => {
+          return (
+            <Movie
+              movie={movie}
+              key={index}
+            />
+          )
+        })}
+      </div>
     </section>
   )
 }
